@@ -18,7 +18,15 @@ const coinSchema = new Schema({
   },
   color: {
     type: String
-  }
+  },
+  price: {
+    type: Number,
+    required: true
+  },
+  updated_at: {
+    type: Date,
+    required: true,
+  },
 });
 
 const Coin = model("Coin", coinSchema);
